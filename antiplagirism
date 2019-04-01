@@ -2,11 +2,7 @@ def check_plagiarism(file1,file2):
     opened_file1 = open(file1)
     opened_file2 = open(file2)
     a = opened_file1.read()
-    b = opened_file2.read()
-    if "i left my body lying somewhere in the sands of time" in a:
-        print("a")
-    if "i left my body lying somewhere in the sands of time" in b:
-        print("b")    
+    b = opened_file2.read()   
     a = a.split()
 
     final_string = ""
