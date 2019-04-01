@@ -1,0 +1,86 @@
+def check_plagiarism(file1,file2):
+    opened_file1 = open(file1)
+    opened_file2 = open(file2)
+    a = opened_file1.read()
+    b = opened_file2.read()
+    if "i left my body lying somewhere in the sands of time" in a:
+        print("a")
+    if "i left my body lying somewhere in the sands of time" in b:
+        print("b")    
+    a = a.split()
+
+    final_string = ""
+    final_list = []
+    temporary_list = []
+    count = 0
+
+            
+    
+    
+    for slowo in a:
+
+        if slowo in b:
+
+            for i in range(1,len(a)):
+                if a.index(slowo)+i > len(a):
+                    break
+
+                
+                try:
+                    if a[a.index(slowo)+i] in b:
+                        
+                        if i >3:
+                            if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4] in b:
+                                count = 5
+                                if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5] in b:
+                                    count = 6
+                                    if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6] in b:
+                                        count = 7
+                                    
+                                        if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7] in b:
+                                        
+                                            count = 8
+                                            if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8] in b:
+                                                count=9
+                                                if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9] in b:
+                                                
+                                                    count=10
+                                                    if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10] in b:
+                                                        count=11
+                                                        if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11] in b:
+                                                            count=12
+                                                            if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11]+" "+a[a.index(slowo)+12] in b:
+                                                                count = 13
+                                                                if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11]+" "+a[a.index(slowo)+12]+" "+a[a.index(slowo)+13] in b:
+                                                                    count=14
+                                                                    if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11]+" "+a[a.index(slowo)+12]+" "+a[a.index(slowo)+13]+" "+a[a.index(slowo)+14] in b:
+                                                                        count=15
+                                                                        if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11]+" "+a[a.index(slowo)+12]+" "+a[a.index(slowo)+13]+" "+a[a.index(slowo)+14]+" "+a[a.index(slowo)+15] in b:
+                                                                            count=16
+                                                                            if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11]+" "+a[a.index(slowo)+12]+" "+a[a.index(slowo)+13]+" "+a[a.index(slowo)+14]+" "+a[a.index(slowo)+15]+" "+a[a.index(slowo)+16] in b:
+                                                                                count=17
+                                                                                if slowo +" "+a[a.index(slowo)+1]+" "+a[a.index(slowo)+2]+" "+a[a.index(slowo)+3]+" "+a[a.index(slowo)+4]+" "+a[a.index(slowo)+5]+" "+a[a.index(slowo)+6]+" "+a[a.index(slowo)+7]+" "+a[a.index(slowo)+8]+" "+a[a.index(slowo)+9]+" "+a[a.index(slowo)+10]+" "+a[a.index(slowo)+11]+" "+a[a.index(slowo)+12]+" "+a[a.index(slowo)+13]+" "+a[a.index(slowo)+14]+" "+a[a.index(slowo)+15]+" "+a[a.index(slowo)+16]+" "+a[a.index(slowo)+17] in b:
+                                                                                    count=18
+                        continue
+                    else:
+                        if i<5:
+                            break
+                        else:
+                            lista = [count, a.index(slowo)+count]
+                            temporary_list.append(lista)
+                            temporary_list.sort()
+                            break
+                except IndexError:
+                    break
+    if len(temporary_list)<1:
+        return False#        final_list = temporary_list
+    good_tuple = temporary_list[-1]
+    count = good_tuple[0]
+    if a[good_tuple[1]-(count+1)] == 'i':
+        final_string += 'i '
+    while good_tuple[0] >0:
+
+             
+        final_string += a[good_tuple[1]-good_tuple[0]]+" "
+        good_tuple[0]-=1         
+    return final_string                          
